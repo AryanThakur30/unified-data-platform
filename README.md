@@ -104,6 +104,25 @@ Returns live KPI data from PostgreSQL:
     "cost_date": "2025-12-28"
   }
 ]
+### KPI Summary API
+
+GET /kpi/summary
+
+Returns aggregated cost per service using SQL GROUP BY:
+
+```json
+[
+  {
+    "service_name": "payments",
+    "total_cost": 2180.5
+  },
+  {
+    "service_name": "search",
+    "total_cost": 961.0
+  }
+]
+
+
 
 
 
