@@ -90,5 +90,20 @@ This proves **reproducibility**.
 - Enables scalable backfilling
 - Mirrors real production ingestion patterns
 - Easy to extend with retries and parallelism
+### API Example
+
+GET /kpi/service-costs
+
+Returns live KPI data from PostgreSQL:
+
+```json
+[
+  {
+    "service_name": "payments",
+    "cost": 1200.5,
+    "cost_date": "2025-12-28"
+  }
+]
+
 
 
